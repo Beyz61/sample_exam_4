@@ -5,8 +5,11 @@ class SampleExamScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('Versuche hier die Aufgabe zu lösen.'),
+      backgroundColor: const Color.fromARGB(255, 42, 39, 39),
+      appBar: AppBar(
+        title: Text("Probe Wissensenscheck 4"),
+      ),
+      body: Column(
       ),
     );
   }
