@@ -9,7 +9,20 @@ class SampleExamScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("Probe Wissensenscheck 4"),
       ),
-      body: Column(
+      body:  Padding(
+        padding: const EdgeInsets.only(top: 50),
+        child: Column(
+           mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Center( 
+              child: CircleAvatar(  
+                radius: 110,
+                backgroundImage: AssetImage("assets/moon.png"),
+              ),
+        ),
+        SizedBox(height: 20),
+          ],
+        ),
       ),
     );
   }
