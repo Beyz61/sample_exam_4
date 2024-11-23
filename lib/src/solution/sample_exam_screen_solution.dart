@@ -11,7 +11,7 @@ class SampleExamScreenSolution extends StatefulWidget {
 class _SampleExamScreenSolutionState extends State<SampleExamScreenSolution> {
   bool _alignStart = true;
   bool _preparationChecked = true;
-  bool _executionChecked = false;
+  bool _executionChecked = false; 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +28,7 @@ class _SampleExamScreenSolutionState extends State<SampleExamScreenSolution> {
                   'assets/moon.png',
                   width: 200,
                   height: 200,
-                  fit: BoxFit.contain,
+                  fit: BoxFit.contain, 
                 ),
               ),
               SizedBox(
