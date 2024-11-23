@@ -25,11 +25,13 @@ class _SampleExamScreenState extends State<SampleExamScreen> {// damit es sich Ã
            mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Center( 
-              child: CircleAvatar(  
-                radius: 110,
-                backgroundImage: AssetImage("assets/moon.png"), // bild muss noch in den vordergrund
+              child: Image(
+                width: 200,
+                height: 200,
+                image: AssetImage("assets/moon.png"), // bild muss noch in den vordergrund
               ),
         ),
+        SizedBox(height: 20),
         ListTile(
           title: Text("Vorbereitung"), 
           subtitle: Text("Wie Auf den Wissenscheck4"), 
@@ -58,6 +60,14 @@ class _SampleExamScreenState extends State<SampleExamScreen> {// damit es sich Ã
          },
         ),
        ),
+       Column(
+        children: [
+          Icon(Icons.favorite, color: Colors.red, size: 30),
+          Icon(Icons.circle, color: Colors.green, size: 30),
+          Icon(Icons.star, color: Colors.blue, size: 30),
+        ],
+
+       )
       ],
      ),
     ),
